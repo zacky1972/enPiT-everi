@@ -20,6 +20,9 @@
 # Ignore yarn log
 yarn-error.log
 
+# Ignore yarn.lock
+yarn.lock
+
 # Ignore node_modules
 /node_modules
 
