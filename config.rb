@@ -1,5 +1,8 @@
 require 'slim'
 
+activate :relative_assets
+
+
 ###
 # Page options, layouts, aliases and proxies
 ###
