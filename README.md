@@ -2,7 +2,7 @@
 
 ## Installation
 
-``bash
+```bash
 $ gem install middleman slim
 $ bundle install
 $ yarn install
