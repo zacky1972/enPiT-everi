@@ -4,5 +4,8 @@
   "description": "Website for enPiT everi",
   "main": "index.js",
   "repository": "git@github.com:zacky1972/enPiT-everi.git",
-  "author": "Susumu Yamazaki <zacky1972@gmail.com>"
+  "author": "Susumu Yamazaki <zacky1972@gmail.com>",
+  "dependencies": {
+    "jquery": "^3.3.0"
+  }
 }
