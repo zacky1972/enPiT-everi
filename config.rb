@@ -45,8 +45,8 @@ configure :build do
   # activate :minify_javascript
 
   activate :iepab,
-	name: :parcel,
-  	command: "yarn parcel build build/index.html --out-dir dist --public-url ./", 
+	name: :gulp,
+  	command: "gulp build", 
   	source: "build",
   	latency: 1
 end
