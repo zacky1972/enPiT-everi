@@ -2,12 +2,6 @@ require 'slim'
 
 activate :relative_assets
 
-activate :iepab,
-  name: :parcel,
-  command: "yarn parcel #{build? ? 'build' : 'watch'} build/index.html --out-dir dist --public-url ./", 
-  source: "build",
-  latency: 1
-
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -49,4 +43,10 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  activate :iepab,
+	name: :parcel,
+  	command: "yarn parcel build build/index.html --out-dir dist --public-url ./", 
+  	source: "build",
+  	latency: 1
 end

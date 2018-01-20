@@ -15,4 +15,4 @@ gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 
-gem 'middleman-iepab'
+gem 'middleman-iepab', '>= 0.1.1'
