@@ -8,11 +8,9 @@ $ bundle install
 $ yarn install
 ```
 
-## Build & Local Preview
+## Build
 
 ```bash
 $ bundle exec middleman build
-$ yarn parcel --no-cache build/index.html
 ```
 
-Open [localhost:1234](localhost:1234) by your browser.
