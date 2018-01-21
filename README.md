@@ -4,13 +4,12 @@
 
 ```bash
 $ gem install middleman slim
-$ bundle install
-$ yarn install
+$ yarn setup
 ```
 
 ## Build
 
 ```bash
-$ bundle exec middleman build
+$ yarn build
 ```
 

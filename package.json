@@ -11,5 +11,10 @@
     "gulp-parcel": "^0.3.3",
     "jquery": "^3.3.0",
     "parcel-bundler": "^1.4.1"
+  },
+  "scripts": {
+    "setup": "bundle install && yarn install",
+    "build": "bundle exec middleman build",
+    "fix-html": "sed -i '' 's/<a href=\"[/]\\([^/]\\)/<a href=\".\\/\\1/g' build/index.html"
   }
 }
