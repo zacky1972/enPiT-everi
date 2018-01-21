@@ -46,7 +46,7 @@ configure :build do
 
   activate :iepab,
 	name: :gulp,
-  	command: "gulp build", 
+  	command: "yarn gulp build", 
   	source: "build",
   	latency: 1
 end
