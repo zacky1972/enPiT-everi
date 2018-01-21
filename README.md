@@ -1,4 +1,4 @@
-# enPiT-everi
+# sample
 
 ## Installation
 
@@ -12,5 +12,6 @@ $ yarn install
 
 ```bash
 $ bundle exec middleman build
+$ yarn parcel build build/index.html --out-dir dist --public-url ./
 ```
 
