@@ -2,7 +2,6 @@ require 'slim'
 
 activate :relative_assets
 
-
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -44,4 +43,10 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  activate :iepab,
+	name: :gulp,
+  	command: "yarn fix-html && yarn gulp build", 
+  	source: "build",
+  	latency: 1
 end
