@@ -44,4 +44,8 @@ header.hc
           = link_to 'サイト内検索', 'search', {class: 'active'}
         - else
           = link_to 'サイト内検索', 'search'
+    .search
+      form action='search'
+        input type='text' name='q' id='q' placeholder='サイト内検索'
+        i.fa.fa-search aria-hidden='true'
 

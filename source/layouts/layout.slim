@@ -12,10 +12,14 @@ html lang="ja"
     link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous'
 
     == stylesheet_link_tag "style"
+    - unless yield_content(:css).nil?
+      == stylesheet_link_tag yield_content(:css)
 
   body class="#{page_classes}"
     == yield
-    script src='https://code.jquery.com/jquery-1.10.2.min.js'
+    script src='https://www.google-analytics.com/analytics.js' async
+    script src='https://www.googletagmanager.com/gtm.js?id=GTM-K5CVBQ5' async
+    script src='https://code.jquery.com/jquery-3.3.1.min.js'
     == javascript_include_tag  "all"
     - unless yield_content(:js).nil?
       == javascript_include_tag yield_content(:js)

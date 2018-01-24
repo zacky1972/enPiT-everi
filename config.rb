@@ -4,8 +4,7 @@ activate :relative_assets
 
 set :slim, {
   pretty: true,
-  sort_attrs: false,
-  format: :html5
+  sort_attrs: false
 }
 
 ###
