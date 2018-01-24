@@ -14,6 +14,34 @@ html lang="ja"
     == stylesheet_link_tag "style"
     - unless yield_content(:css).nil?
       == stylesheet_link_tag yield_content(:css)
+    - unless yield_content(:description).nil?
+      meta name='description' content=yield_content(:description)
+    - unless yield_content(:keywords).nil?
+      meta name='keywords' content=yield_content(:keywords)
+
+    link rel='icon' href='images/favicon.ico' type='image/x-icon'
+    link rel='icon' href='images/favicon.ico' type='image/vnd.microsoft.icon'
+    link rel='apple-touch-icon' sizes='180x180' href='images/apple-touch-icon.png'
+    link rel='icon' type='image/png' sizes='32x32' href='images/favicon-32x32.png'
+    link rel='icon' type='image/png' sizes='16x16' href='images/favicon-16x16.png'
+    link rel='manifest' href='manifest.json'
+    link rel='mask-icon' href='images/safari-pinned-tab.svg' color='#5bbad5'
+    meta name='theme-color' content='#ffffff'
+
+    /! facebook ogp
+    meta property='og:locale' content='ja_JP'
+    meta property='og:site_name' content='enPiT-everi'
+    meta property='og:type' content='website'
+    meta property='og:title' content='社会人向け「人工知能・ロボット・IoT」に関する短期講座・演習プログラム enPiT-everi'
+    meta property='og:description' content=yield_content(:description)
+    meta property='og:image' content='images/enPiT-everi.png'
+
+    /! twitter card
+    meta name='twitter:card' content='summary_large_image'
+    meta name='twitter:title' content='社会人向け「人工知能・ロボット・IoT」に関する短期講座・演習プログラム enPiT-everi'
+    meta name='twitter:description' content=yield_content(:description)
+    meta name='twitter:image' content='images/enPiT-everi.png'
+
 
   body class="#{page_classes}"
     == yield

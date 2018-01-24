@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>WP成長分野を支える情報技術人材の育成拠点の経営 enPit-Pro（エンピットプロ）</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="/com/css/import.css">
+	<link rel="stylesheet" type="text/css" href="/com/js/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="/index.css">
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon-apple-touch-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-apple-touch-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-apple-touch-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-apple-touch-144.png">
+	<link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32 48x48" href="favicon.ico">
+	<link rel="icon" sizes="128x128" href="favicon.icns">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- facebook ogp -->
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="enPit-Pro（エンピットプロ）" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="成長分野を支える情報技術人材の育成拠点の経営 enPit-Pro（エンピットプロ）" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="成長分野を支える情報技術人材の育成拠点の経営 enPit-Pro（エンピットプロ）">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+</head>
+
+<body>
+  <header class="hc">
+    <div class="mb">
+  <p class="text">成長分野を支える情報技術人材の育成拠点の形成</p>
+  <h1 class="logo"><a href="/"><img src="/com/img/logo.svg" alt="enPiT everi 社会人向け「人工知能・ロボット・IoT」に関する短期講義・演習プログラム" /></a></h1>
+  <ul class="gm">
+    <li><a href="/about/" data-active>事業紹介</a></li>
+    <li><a href="/school/" data-active>連携校</a></li>
+    <li><a href="/course/" data-active>教育コース</a></li>
+    <li><a href="/support/" data-active>補助制度</a></li>
+    <li><a href="/docs/" data-active>公開資料</a></li>
+    <li><a href="/activity/" data-active>活動紹介</a></li>
+    <li><a href="/contact/" data-active>お問い合せ</a></li>
+    <li class="sm-only"><a href="/search/" data-active>サイト内検索</a></li>
+  </ul>
+  <div class="search"><form action="/search/"><input type="text" name="q" id="q" placeholder="サイト内検索">
+  <i class="fa fa-search" aria-hidden="true"></i></form></div>
+  <div class="sm-only"><img src="/com/img/sm-menu.svg" alt="MENU" class="sm-menu" id="sm-menu" /></div>
+</div>
+  </header>
+  <section class="billboard">
+    <div class="inner">
+      <img src="img/billboard01.png" class="item item01" alt="Smart Factory"/>
+      <img src="img/billboard02.png" class="item item02" alt="Intelligent Vehicle"/>
+      <img src="img/billboard03.png" class="item item03" alt="Smart Life Care"/>
+      <img src="img/billboard04.png" class="item item04" alt="Smart Farm & Forest"/>
+      <img src="img/billboard05.png" class="item item05" alt="Tourism X ICT"/>
+      <img src="img/billboard11.png" class="item item11" alt="社会人のみなさん、お待たせしました。社会人向け「人工知能・ロボット・IoTに関する短期講座・演習プログラム」がはじまります！！"/>
+    </div>
+    <h2 class="ttl01 size18">"地域産業の競争力強化を図る人工知能とロボット技術を駆使したIoT技術の社会実装を推進する実践的人材育成コースの開発・実施"</h2>
+</section>
+<section class="main">
+    <div class="mb mb-narrow">
+      <p style="line-height: 1.5; color: #717071;">2017年度採択事業<br>
+        <span class="size24">文部科学省「成長分野を支える情報技術人材の育成拠点の形成（enPiT）」enPiT-Pro</span></p>
+      <p class="text-center size18">九州・中国地域の特色ある産業を対象として、幅広い分野を大学連携で補完し合い、新しい基幹産業への展開を<br>
+実現するチャンスを活かすために、すでに社会で働く多様な人が、人工知能とロボット技術などの新しい技術革新を<br>
+学ぶための実践的な教育プログラムを開発・実施します。
+</p>
+     <p class="text-center"><img src="img/img-relateborder.png" alt=""/></p>
+      <div class="linkBlock clearfix">
+      <ul class="relate relate01 clearfix">
+        <li><img src="img/41.png" alt="提携校"/></li>
+        <li><a href="https://www.kitakyu-u.ac.jp/"><img src="img/bnr-kitakyu_u.png" alt="北九州市立大学"/></a></li>
+      </ul>
+      <ul class="relate relate02 clearfix">
+        <li><img src="img/43.png" alt="提携校"/></li>
+        <li><a href="http://www.kyutech.ac.jp/"><img src="img/bnr-kit.png" alt="九州工業大学"/></a></li>
+        <li><a href="http://www.kumamoto-u.ac.jp/"><img src="img/bnr-kumamoto.png" alt="熊本大学"/></a></li>
+        <li><a href="http://www.miyazaki-u.ac.jp/"><img src="img/bnr-miyazaki.png" alt="宮崎大学"/></a></li>
+        <li><a href="https://www.hiroshima-cu.ac.jp/"><img src="img/bnr-hiroshima.png" alt="広島市立大学"/></a></li>
+      </ul>
+        
+      </div>
+      <p class="text-center">連携機関：(公財)北九州産業学術推進機構、(公財)九州ヒューマンメディア創造センター（e-PORTパートナー）</p>
+    </div>
+  
+  </section>
+  
+  
+<footer class="fc">
+    </footer>
+  
+  
+<script src="/com/js/import.js"></script>
+  <script src="/index.js"></script>
+</body>
+
+</html>
