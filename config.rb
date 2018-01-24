@@ -6,6 +6,14 @@ activate :relative_assets
 # Page options, layouts, aliases and proxies
 ###
 
+activate :external_pipeline,
+  name: :gulp_post,
+  command: "yarn gulp build", 
+  source: "build",
+  latency: 1
+
+
+
 # Per-page layout changes:
 #
 # With no layout
@@ -45,8 +53,8 @@ configure :build do
   # activate :minify_javascript
 
   activate :iepab,
-	name: :gulp,
-  	command: "yarn fix-html && yarn gulp build", 
+	name: :gulp_post,
+  	command: "yarn gulp post", 
   	source: "build",
   	latency: 1
 end

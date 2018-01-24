@@ -6,11 +6,18 @@
   "repository": "git@github.com:zacky1972/enPiT-everi.git",
   "author": "Susumu Yamazaki <zacky1972@gmail.com>",
   "dependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-coffee": "^3.0.2",
     "gulp-parcel": "^0.3.3",
+    "gulp-rev": "^8.1.1",
+    "gulp-rev-replace": "zacky1972/gulp-rev-replace#master",
+    "gulp-sass": "^3.1.0",
     "jquery": "^3.3.0",
-    "parcel-bundler": "^1.4.1"
+    "parcel-bundler": "^1.4.1",
+    "rev-del": "^1.0.5",
+    "run-sequence": "^2.2.1",
+    "vinyl-paths": "^2.1.0"
   },
   "scripts": {
     "setup": "bundle install && yarn install",
