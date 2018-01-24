@@ -1,9 +1,16 @@
 ---
 title: enPiT-everi
 ---
+- content_for(:js, 'index.js')
+= partial 'partials/header', :locals => {active: :index}
+main role='main'
+  section.billboard.pc-only
+    .inner style='display: block;'
+      = image_tag 'billboard01.png', {class: 'item item01', alt: 'Smart Factory'}
+      = image_tag 'billboard02.png', {class: 'item item02', alt: 'Intelligent Vehicle'}
+      = image_tag 'billboard03.png', {class: 'item item03', alt: 'Smart Life Care'}
+      = image_tag 'billboard04.png', {class: 'item item04', alt: 'Smart Farm & Forest'}
+      = image_tag 'billboard05.png', {class: 'item item05', alt: 'Tourism x ICT'}
+      = image_tag 'billboard11.png', {class: 'item item11', alt: '社会人のみなさん、お待たせしました。社会人向け「人工知能・ロボット・IoTに関する短期講座・演習プログラム」がはじまります!!'}
 
-header.hc
-  .mb
-    p.text 成長分野を支える情報技術人材の育成拠点の形成
-    h1.logo
-      == link_to image_tag('hc-logo.png', {alt: 'enPiT-everi', style: 'opacity: 1;'}), ''
+= partial 'partials/footer'

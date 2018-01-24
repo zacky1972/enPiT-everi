@@ -1,0 +1,47 @@
+header.hc
+  .mb
+    p.text 成長分野を支える情報技術人材の育成拠点の形成
+    h1.logo
+      = link_to image_tag('hc-logo.png', {alt: 'enPiT-everi', style: 'opacity: 1;'}), ''
+    ul.gm
+      li
+        - if active == :about
+          = link_to '事業紹介', 'about', {class: 'active'}
+        - else
+          = link_to '事業紹介', 'about'
+      li
+        - if active == :school
+          = link_to '連携校', 'school', {class: 'active'}
+        - else
+          = link_to '連携校', 'school'
+      li
+        - if active == :course
+          = link_to '教育コース', 'course', {class: 'active'}
+        - else
+          = link_to '教育コース', 'course'
+      li
+        - if active == :support
+          = link_to '補助制度', 'support', {class: 'active'}
+        - else
+          = link_to '補助制度', 'support'
+      li
+        - if active == :docs
+          = link_to '公開資料', 'docs', {class: 'active'}
+        - else
+          = link_to '公開資料', 'docs'
+      li
+        - if active == :activity
+          = link_to '活動紹介', 'activity', {class: 'active'}
+        - else
+          = link_to '活動紹介', 'activity'
+      li
+        - if active == :contact
+          = link_to 'お問い合わせ', 'contact', {class: 'active'}
+        - else
+          = link_to 'お問い合わせ', 'contact'
+      li.sm-only
+        - if active == :search
+          = link_to 'サイト内検索', 'search', {class: 'active'}
+        - else
+          = link_to 'サイト内検索', 'search'
+
