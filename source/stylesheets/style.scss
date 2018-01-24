@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(https://fonts.googleapis.com/earlyaccess/mplus1p.css);
+
+$grid-columns: 60;
+$grid-gutter-width: 0;
+
+@import "bootstrap.scss";
+
 // @import "./reset.scss";
 // @import "./layout.scss";
 // @import "./pc.scss";
@@ -13,7 +19,6 @@
 	font-weight: bold;
 	font-size: 11px;
 }
-
 
 .navbar-search {
 	position: relative;
@@ -40,78 +45,73 @@
 	}
 }
 
-.billboard {
-	margin: 0;
-	padding: 0;
-}
-
-.billboard * {
-	margin-top: 0;
+.item01,.item02,.item03,.item04,.item05 {
+	z-index: 9;
 }
 
 .billboard .inner {
-	margin: 0 auto;
-	padding: 0;
-	width: 100%;
 	overflow: hidden;
 	position: relative;
-	display: none;
+	.billboard-row-t {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }
 
 .billboard .ttl01 {
-	margin:0 auto;
+	margin: 0 auto;
 	padding: 0.3em;
-	width: 100%;
 	color: #FFFFFF;
 	background: #F39800;
 	text-align: center;
 }
 
-img.item {
-	display:block;
-	position: absolute;
+.size14 {
+	font-size: 14px;
 }
 
-.item01 {
-	top: 0;
-	left: 0;
-	z-index: 9;
+.size16 {
+	font-size: 16px;
 }
 
-.item02 {
-	top: 0;
-	left: 220px;
-	z-index: 9;
+.size18 {
+	font-size: 18px;	
 }
 
-.item03 {
-	top: 0;
-	left: 440px;
-	z-index: 9;
+.size22 {
+	font-size: 20px;
 }
 
-.item04 {
-	top: 0;
-	left: 660px;
-	z-index: 9;
+section.main h2 {
+	line-height: 1.5;
+	color: #717071;
+	margin: 20px 0 0 0;
+	padding: 0;
+	p {
+		margin: 0;
+	}
 }
 
-.item05 {
-	top: 0;
-	left: 880px;
-	z-index: 9;
+.linkBlock ul {
+	list-style: none;
+	li {
+		display: inline-block;
+		margin: 5px 0 5px 0;
+	}
 }
 
-.item11 {
-	top: 0;
-	left: 0;
+footer {
+	background: #F29600;
+	color: #FFFFFF;
+	font-size: 13px;
+	p {
+		margin: 0;
+	}
+	span {
+		margin-right: 8px;
+	}
+	.copyright {
+		font-size: 11px;
+	}
 }
-
- .linkBlock{}
-.relate{ margin-top: 0;}
-.relate01{ float: left;}
-.relate02{ float: right;}
-.relate li{ float:left; margin-left: 0.7em;}
-.relate li:first-child{ margin-left:0;}
-
-.fc .fc-image{ display:none;}

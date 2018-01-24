@@ -6,6 +6,7 @@
   "repository": "git@github.com:zacky1972/enPiT-everi.git",
   "author": "Susumu Yamazaki <zacky1972@gmail.com>",
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-coffee": "^3.0.2",

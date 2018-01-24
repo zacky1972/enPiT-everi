@@ -1,39 +1,4 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.billboard{ margin:0; padding: 0;}
-.billboard *{ margin-top:0;}
-.billboard .inner{ margin:0 auto; padding: 0; width:1100px; height: 435px; overflow: hidden; position: relative; display: none;}
-.billboard .ttl01{ margin:0 auto; padding: 0.3em; width:1100px; color:#FFFFFF; background: #F39800; text-align: center; }
-
-img.item{ display:block; position: absolute;}
-.item01{ top:0; left: 0; z-index: 9;}
-.item02{ top:0; left: 220px; z-index: 9;}
-.item03{ top:0; left: 440px; z-index: 9;}
-.item04{ top:0; left: 660px; z-index: 9;}
-.item05{ top:0; left: 880px; z-index: 9;}
-.item11{ top:0; left: 0;}
-
-
-
 .fc .fc-image{ display:none;}
-
-@media only screen and (min-width:480px){ /* pc only */
-  
-.linkBlock{}
-.relate{ margin-top: 0;}
-.relate01{ float: left;}
-.relate02{ float: right;}
-.relate li{ float:left; margin-left: 0.7em;}
-.relate li:first-child{ margin-left:0;}
-  
-}
-@media only screen and (max-width:480px){ /* sm pnly */
-  .sm-billboard{ margin:0; padding: 0;}
-  .sm-billboard *{ margin-top:0;}
-  .sm-billboard img{ display:block;}
-  .sm-billboard .ttl01{ margin:0 auto; padding: 0.3em; color:#FFFFFF; background: #F39800; text-align: center; }
-  
-  .linkBlock{}
-  .linkBlock li{ text-align:center;}
-}
