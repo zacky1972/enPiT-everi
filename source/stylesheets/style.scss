@@ -1,31 +1,117 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(https://fonts.googleapis.com/earlyaccess/mplus1p.css);
-@import "./reset.scss";
-@import "./layout.scss";
-@import "./pc.scss";
-@import "./slick.scss";
+
+$grid-columns: 60;
+$grid-gutter-width: 0;
+
+@import "bootstrap.scss";
+
+// @import "./reset.scss";
+// @import "./layout.scss";
+// @import "./pc.scss";
+// @import "./slick.scss";
 
 /* CSS Document */
 
-.billboard{ margin:0; padding: 0;}
-.billboard *{ margin-top:0;}
-.billboard .inner{ margin:0 auto; padding: 0; width:1100px; height: 435px; overflow: hidden; position: relative; display: none;}
-.billboard .ttl01{ margin:0 auto; padding: 0.3em; width:1100px; color:#FFFFFF; background: #F39800; text-align: center; }
+.navbar-brand .media-body {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 11px;
+}
 
-img.item{ display:block; position: absolute;}
-.item01{ top:0; left: 0; z-index: 9;}
-.item02{ top:0; left: 220px; z-index: 9;}
-.item03{ top:0; left: 440px; z-index: 9;}
-.item04{ top:0; left: 660px; z-index: 9;}
-.item05{ top:0; left: 880px; z-index: 9;}
-.item11{ top:0; left: 0;}
+.navbar-search {
+	position: relative;
+	.search-query {
+		width: 100px;
+		font-size: 11px;
+	}
+	.fa-search {
+		position: absolute;
+		top: 4px;
+		right: 10px;
+	}
+}
 
- .linkBlock{}
-.relate{ margin-top: 0;}
-.relate01{ float: left;}
-.relate02{ float: right;}
-.relate li{ float:left; margin-left: 0.7em;}
-.relate li:first-child{ margin-left:0;}
+.navbar-search .search-query:focus, .navbar-search .search-query.focused {
+	padding-left: 30px;
+}
 
-.fc .fc-image{ display:none;}
+.nav-item {
+	a {
+		font-size: 11px;
+		color: #4d4d4d;
+		text-decoration: none;
+	}
+}
+
+.item01,.item02,.item03,.item04,.item05 {
+	z-index: 9;
+}
+
+.billboard .inner {
+	overflow: hidden;
+	position: relative;
+	.billboard-row-t {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.billboard .ttl01 {
+	margin: 0 auto;
+	padding: 0.3em;
+	color: #FFFFFF;
+	background: #F39800;
+	text-align: center;
+}
+
+.size14 {
+	font-size: 14px;
+}
+
+.size16 {
+	font-size: 16px;
+}
+
+.size18 {
+	font-size: 18px;	
+}
+
+.size22 {
+	font-size: 20px;
+}
+
+section.main h2 {
+	line-height: 1.5;
+	color: #717071;
+	margin: 20px 0 0 0;
+	padding: 0;
+	p {
+		margin: 0;
+	}
+}
+
+.linkBlock ul {
+	list-style: none;
+	li {
+		display: inline-block;
+		margin: 5px 0 5px 0;
+	}
+}
+
+footer {
+	background: #F29600;
+	color: #FFFFFF;
+	font-size: 13px;
+	p {
+		margin: 0;
+	}
+	span {
+		margin-right: 8px;
+	}
+	.copyright {
+		font-size: 11px;
+	}
+}

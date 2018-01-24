@@ -10,7 +10,9 @@ vinylPaths = require 'vinyl-paths'
 
 gulp.task 'build:sass', () ->
   gulp.src 'source/stylesheets/**/*.scss'
-    .pipe sass()
+    .pipe sass({
+      includePaths: ['node_modules/bootstrap/scss/']
+    })
     .pipe gulp.dest('build/stylesheets/')
 
 gulp.task 'build:js', () ->

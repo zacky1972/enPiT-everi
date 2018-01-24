@@ -1,6 +1,6 @@
 $(function(){
   
-  $(".item11").hide();
+  $(".billboard .inner").hide();
   $(".billboard .inner").fadeIn(1000,function(){ anim01();});
   
   function anim01(){
