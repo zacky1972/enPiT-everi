@@ -1,0 +1,49 @@
+---
+title: 連携校 | enPiT-everi
+---
+- content_for(:description, '九州・中国地域の特色ある産業の社会人を対象に、人工知能やロボット技術などの新しい技術を身につける実践的な教育プログラムを提供するものです。大学連携により補完しあうことで幅広いプログラムとなっています。')
+- content_for(:keywords, 'enPiT,実践的人材育成,社会人学習,人工知能,ロボット,IoT')
+= partial 'partials/header', :locals => {active: :school}
+main role='main'
+  .container
+    h1.page-title 連携校
+    .row
+      .col-60.col-md-20
+        = image_tag 'logo-uk.svg', {class: 'img-fluid align-middle', alt: '北九州市立大学'}
+      .col-30.col-md-10
+        article.person.align-middle
+          p.charge 事業責任者
+          p.image
+            = image_tag '101.png'
+          h3.name 梶原 昭博
+          p.title 副学長(理事)
+          p.title.title-sub 大学院国際環境工学研究科
+          p.title.title-sub 情報工学専攻 教授 
+      .col-30.col-md-10
+        article.person.align-middle
+          p.charge 事業担当者
+          p.image
+            = image_tag '102.png'
+          h3.name 中武 繁寿
+          p.title 大学院国際環境工学研究科
+          p.title 情報工学専攻 教授 
+      .col-30.col-md-10
+        article.person.align-middle
+          p.charge 事業担当者
+          p.image
+            = image_tag '103.jpg'
+          h3.name 奥田 正浩
+          p.title 大学院国際環境工学研究科
+          p.title 情報工学専攻 教授 
+      .col-30.col-md-10
+        article.person.align-middle
+          p.charge 事業担当者
+          p.image
+            = image_tag '104.jpg'
+          h3.name 山崎 進
+          p.title 大学院国際環境工学研究科
+          p.title 情報工学専攻 准教授 
+
+
+
+= partial 'partials/footer'

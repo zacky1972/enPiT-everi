@@ -1,7 +1,7 @@
 header
   .container
     nav.navbar.navbar-expand-lg.navbar-light.bg-light.d-print
-      = link_to '', {class: 'navbar-brand'} do
+      = link_to '/', {class: 'navbar-brand'} do
         .media
           = image_tag('hc-logo.png', {alt: 'enPiT-everi', style: 'opacity: 1;', class: 'd-inline-block align-middle align-self-cener mr-3'})
           .media-body
@@ -14,46 +14,46 @@ header
         ul.navbar-nav.mr-auto
           - if active == :about
             li.nav-item.active
-              = link_to '事業紹介', 'about', {class: 'nav-link'}
+              = link_to '事業紹介', '/about', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to '事業紹介', 'about', {class: 'nav-link'}
+              = link_to '事業紹介', '/about', {class: 'nav-link'}
           - if active == :school
             li.nav-item.active
-              = link_to '連携校', 'school', {class: 'nav-link'}
+              = link_to '連携校', '/school', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to '連携校', 'school', {class: 'nav-link'}
+              = link_to '連携校', '/school', {class: 'nav-link'}
           - if active == :course
             li.nav-item.active
-              = link_to '教育コース', 'course', {class: 'nav-link'}
+              = link_to '教育コース', '/course', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to '教育コース', 'course', {class: 'nav-link'}
+              = link_to '教育コース', '/course', {class: 'nav-link'}
           - if active == :support
             li.nav-item.active
-              = link_to '補助制度', 'support', {class: 'nav-link'}
+              = link_to '補助制度', '/support', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to '補助制度', 'support', {class: 'nav-link'}
+              = link_to '補助制度', '/support', {class: 'nav-link'}
           - if active == :docs
             li.nav-item.active
-              = link_to '公開資料', 'docs', {class: 'nav-link'}
+              = link_to '公開資料', '/docs', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to '公開資料', 'docs', {class: 'nav-link'}
+              = link_to '公開資料', '/docs', {class: 'nav-link'}
           - if active == :activity
             li.nav-item.active
-              = link_to '活動紹介', 'activity', {class: 'nav-link'}
+              = link_to '活動紹介', '/activity', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to '活動紹介', 'activity', {class: 'nav-link'}
+              = link_to '活動紹介', '/activity', {class: 'nav-link'}
           - if active == :contact
             li.nav-item.active
-              = link_to 'お問い合わせ', 'contact', {class: 'nav-link'}
+              = link_to 'お問い合わせ', '/contact', {class: 'nav-link'}
           - else
             li.nav-item
-              = link_to 'お問い合わせ', 'contact', {class: 'nav-link'}
+              = link_to 'お問い合わせ', '/contact', {class: 'nav-link'}
         form.form-inline.navbar-search
           input.form-control.form-control-sm.mr-sm-2.search-query type='search' placeholder='サイト内検索' aria-label='サイト内検索'
           i.fa.fa-search aria-hidden='true'
