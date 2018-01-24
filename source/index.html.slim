@@ -7,56 +7,55 @@ title: enPiT-everi
 - content_for(:keywords, 'enPiT,実践的人材育成,社会人学習,人工知能,ロボット,IoT')
 = partial 'partials/header', :locals => {active: :index}
 main role='main'
-  section.billboard.pc-only
-    .inner style='display: block;'
-      = image_tag 'billboard01.png', {class: 'item item01', alt: 'Smart Factory'}
-      = image_tag 'billboard02.png', {class: 'item item02', alt: 'Intelligent Vehicle'}
-      = image_tag 'billboard03.png', {class: 'item item03', alt: 'Smart Life Care'}
-      = image_tag 'billboard04.png', {class: 'item item04', alt: 'Smart Farm & Forest'}
-      = image_tag 'billboard05.png', {class: 'item item05', alt: 'Tourism x ICT'}
-      = image_tag 'billboard11.png', {class: 'item item11', alt: '社会人のみなさん、お待たせしました。社会人向け「人工知能・ロボット・IoTに関する短期講座・演習プログラム」がはじまります!!'}
-    h2.ttl01.size18 地域産業の競争力強化を図る人工知能とロボット技術を駆使したIoT技術の社会実装を推進する実践的人材育成コースの開発・実施
-  section.sm-billboard.sm-only
-    p.image
-      = image_tag 'sm-billboard11.png', {alt: '社会人のみなさん、お待たせしました。社会人向け「人工知能・ロボット・IoTに関する短期講座・演習プログラム」がはじまります!!'}
-    h2.ttl01.size18 地域産業の競争力強化を図る人工知能とロボット技術を駆使したIoT技術の社会実装を推進する実践的人材育成コースの開発・実施
-  section.main
-    .mb.mb-narrow
-      h2 style='line-height: 1.5; color: #717071;'
-        | 2017年度採択事業
-        br
-        span.size24 文部科学省「成長分野を支える情報技術人材の育成拠点の形成(enPiT)」enPiT-Pro
-      p.text-center.size18.sm-text-left
-        | 九州・中国地域の特色ある産業の社会人を対象に、人工知能やロボット技術などの新しい技術を身につける実践的な
-        span.pc-only
+  .container
+    section.billboard.pc-only
+      .inner style='display: block;'
+        = image_tag 'billboard01.png', {class: 'item item01', alt: 'Smart Factory'}
+        = image_tag 'billboard02.png', {class: 'item item02', alt: 'Intelligent Vehicle'}
+        = image_tag 'billboard03.png', {class: 'item item03', alt: 'Smart Life Care'}
+        = image_tag 'billboard04.png', {class: 'item item04', alt: 'Smart Farm & Forest'}
+        = image_tag 'billboard05.png', {class: 'item item05', alt: 'Tourism x ICT'}
+        = image_tag 'billboard11.png', {class: 'item item11 img-fluid', alt: '社会人のみなさん、お待たせしました。社会人向け「人工知能・ロボット・IoTに関する短期講座・演習プログラム」がはじまります!!'}
+      h2.ttl01.size18 地域産業の競争力強化を図る人工知能とロボット技術を駆使したIoT技術の社会実装を推進する実践的人材育成コースの開発・実施
+    section.sm-billboard.sm-only
+      p.image
+        = image_tag 'sm-billboard11.png', {alt: '社会人のみなさん、お待たせしました。社会人向け「人工知能・ロボット・IoTに関する短期講座・演習プログラム」がはじまります!!'}
+      h2.ttl01.size18 地域産業の競争力強化を図る人工知能とロボット技術を駆使したIoT技術の社会実装を推進する実践的人材育成コースの開発・実施
+    section.main
+      .mb.mb-narrow
+        h2 style='line-height: 1.5; color: #717071;'
+          | 2017年度採択事業
           br
-        | 教育プログラムを提供するものです。大学連携により補完しあうことで幅広いプログラムとなっています。
-      p.text-center
-        = image_tag 'img-relateborder.png'
-      .linkBlock.clearfix
-        ul.relate.relate01.clearfix
-          li
-            = image_tag '41.png', {alt: '代表校'}
-          li
-            = link_to image_tag('bnr-kitakyu_u.png', {alt: '北九州市立大学'}), 'https://www.kitakyu-u.ac.jp/', {target: '_blank'}
-        ul.relate.relate02.clearfix
-          li
-            = image_tag '43.png', {alt: '連携校'}
-          li
-            = link_to image_tag('bnr-kit.png', {alt: '九州工業大学'}), 'https://www.kyutech.ac.jp/', {target: '_blank'}
-          li
-            = link_to image_tag('bnr-kumamoto.png', {alt: '熊本大学'}), 'https://www.kumamoto-u.ac.jp/', {target: '_blank'}
-          li
-            = link_to image_tag('bnr-miyazaki.png', {alt: '宮崎大学'}), 'https://www.miyazaki-u.ac.jp/', {target: '_blank'}
-          li
-            = link_to image_tag('bnr-hiroshima.png', {alt: '広島市立大学'}), 'https://www.hiroshima-cu.ac.jp/', {target: '_blank'}
-      p.text-center.sm-text-left
-        | 連携機関: 
-        span.sm-only
-          br
-        | (公財)北九州産業学術推進機構、(公財)九州ヒューマンメディア創造センター（e-PORTパートナー）
- 
-
+          span.size24 文部科学省「成長分野を支える情報技術人材の育成拠点の形成(enPiT)」enPiT-Pro
+        p.text-center.size18.sm-text-left
+          | 九州・中国地域の特色ある産業の社会人を対象に、人工知能やロボット技術などの新しい技術を身につける実践的な
+          span.pc-only
+            br
+          | 教育プログラムを提供するものです。大学連携により補完しあうことで幅広いプログラムとなっています。
+        p.text-center
+          = image_tag 'img-relateborder.png'
+        .linkBlock.clearfix
+          ul.relate.relate01.clearfix
+            li
+              = image_tag '41.png', {alt: '代表校'}
+            li
+              = link_to image_tag('bnr-kitakyu_u.png', {alt: '北九州市立大学'}), 'https://www.kitakyu-u.ac.jp/', {target: '_blank'}
+          ul.relate.relate02.clearfix
+            li
+              = image_tag '43.png', {alt: '連携校'}
+            li
+              = link_to image_tag('bnr-kit.png', {alt: '九州工業大学'}), 'https://www.kyutech.ac.jp/', {target: '_blank'}
+            li
+              = link_to image_tag('bnr-kumamoto.png', {alt: '熊本大学'}), 'https://www.kumamoto-u.ac.jp/', {target: '_blank'}
+            li
+              = link_to image_tag('bnr-miyazaki.png', {alt: '宮崎大学'}), 'https://www.miyazaki-u.ac.jp/', {target: '_blank'}
+            li
+              = link_to image_tag('bnr-hiroshima.png', {alt: '広島市立大学'}), 'https://www.hiroshima-cu.ac.jp/', {target: '_blank'}
+        p.text-center.sm-text-left
+          | 連携機関: 
+          span.sm-only
+            br
+          | (公財)北九州産業学術推進機構、(公財)九州ヒューマンメディア創造センター（e-PORTパートナー）
 
 
 = partial 'partials/footer'

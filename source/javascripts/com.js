@@ -13,11 +13,12 @@ $(function(){
 
 
 /* header fixed */
+/*
 var gm_nav = $('.gm'), gm_offset = gm_nav.offset();
 	$(window).scroll(function () {
 	if($(window).scrollTop() > gm_offset.top) { gm_nav.addClass('gm_fixed'); } else { gm_nav.removeClass('gm_fixed'); }
 });
-   
+*/ 
 
 /* smart gm */
 var smflag = false;
