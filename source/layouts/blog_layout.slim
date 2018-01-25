@@ -46,7 +46,9 @@ html lang="ja"
 
   body class="#{page_classes}"
     == partial 'partials/header', :locals => {active: :activity}
-    == yield
+    main
+      .container
+        == yield
     == partial 'partials/footer'
     script src='https://www.google-analytics.com/analytics.js' async
     script src='https://www.googletagmanager.com/gtm.js?id=GTM-K5CVBQ5' async
