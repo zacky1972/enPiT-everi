@@ -23,6 +23,7 @@
   "scripts": {
     "setup": "bundle install && yarn install",
     "build": "bundle exec middleman build",
-    "fix-html": "sed -i '' 's/<a href=\"[/]\\([^/]\\)/<a href=\".\\/\\1/g' build/index.html"
+    "fix-html": "sed -i '' 's/<a href=\"[/]\\([^/]\\)/<a href=\".\\/\\1/g' build/index.html",
+    "article": "bundle exec middleman article "
   }
 }

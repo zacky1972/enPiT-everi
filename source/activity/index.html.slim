@@ -1,10 +1,17 @@
 ---
-title: Welcome to Middleman
+title: 活動紹介 | enPiT-everi
 ---
 
-.welcome
-  .logo
-    == image_tag 'middleman-logo.svg'
-  h1 Middleman is Watching
-  p.doc
-    == link_to "Read Online Documentation", "http://middlemanapp.com/"
+- content_for(:description, '九州・中国地域の特色ある産業の社会人を対象に、人工知能やロボット技術などの新しい技術を身につける実践的な教育プログラムを提供するものです。大学連携により補完しあうことで幅広いプログラムとなっています。')
+- content_for(:keywords, 'enPiT,実践的人材育成,社会人学習,人工知能,ロボット,IoT')
+= partial 'partials/header', :locals => {active: :index}
+main role='main'
+  .container
+    h1.page-title 活動紹介
+    - blog.articles[0...10].each do |article|
+      article
+        = link_to article.date.strftime('%Y年 %m月 %d日'), article.url
+        = article.summary
+        = link_to '...もっと読む', article.url
+
+= partial 'partials/footer'

@@ -17,7 +17,12 @@ activate :external_pipeline,
   source: "build",
   latency: 1
 
+activate :blog do |blog|
+  blog.prefix = 'activity'
+  blog.layout = 'layouts/blog_layout'
+end
 
+set :time_zone, 'Tokyo'
 
 # Per-page layout changes:
 #

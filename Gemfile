@@ -16,3 +16,5 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 
 gem 'middleman-iepab', '>= 0.1.1'
+gem 'middleman-blog', '~> 4.0'
+gem 'nokogiri'

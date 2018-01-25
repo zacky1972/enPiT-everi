@@ -1,0 +1,17 @@
+---
+
+title: enPiT-everi のホームページを公開しました。
+date: 2018-01-25 09:07 JST
+tags: 
+layout: "layouts/blog_layout"
+---
+# enPiT-everi のホームページを公開しました。
+
+2018年1月25日に enPiT-everi のホームページを公開しました。
+
+* [enPiT-everi ホームページ](https://enpit-everi.jp)
+
+また，同日に enPiT 第6回シンポジウムにて enPiT-everi の展示を行いました。
+
+
+

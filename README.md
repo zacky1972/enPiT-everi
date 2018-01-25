@@ -13,3 +13,8 @@ $ yarn setup
 $ yarn build
 ```
 
+## New Article
+
+```bash
+$ yarn article TITLE [--date DATE]...
+```

@@ -5,7 +5,7 @@ html lang="ja"
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
-    title = current_page.data.title || "enPiT-everi"
+    title = "#{current_page.data.title} | enPiT-everi | 活動紹介"
 
     link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
 
@@ -14,10 +14,7 @@ html lang="ja"
     / link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'
 
     == stylesheet_link_tag "style"
-    - unless yield_content(:css).nil?
-      == stylesheet_link_tag yield_content(:css)
-    - unless yield_content(:description).nil?
-      meta name='description' content=yield_content(:description)
+    meta name='description' content="#{current_page.data.summary}"
     - unless yield_content(:keywords).nil?
       meta name='keywords' content=yield_content(:keywords)
 
@@ -34,23 +31,23 @@ html lang="ja"
     meta property='og:locale' content='ja_JP'
     meta property='og:site_name' content='enPiT-everi'
     meta property='og:type' content='website'
-    meta property='og:title' content="社会人向け「人工知能・ロボット・IoT」に関する短期講座・演習プログラム #{current_page.data.title}"
-    meta property='og:description' content=yield_content(:description)
+    meta property='og:title' content="#{current_page.data.title} | enPiT-everi | 活動紹介"
+    meta property='og:description' content="#{current_page.data.summary}"
     meta property='og:image' content='/images/enPiT-everi.png'
 
     /! twitter card
     meta name='twitter:card' content='summary_large_image'
-    meta name='twitter:title' content='社会人向け「人工知能・ロボット・IoT」に関する短期講座・演習プログラム enPiT-everi'
-    meta name='twitter:description' content=yield_content(:description)
+    meta name='twitter:title' content="#{current_page.data.title} | enPiT-everi | 活動紹介"
+    meta name='twitter:description' content="#{current_page.data.summary}"
     meta name='twitter:image' content='/images/enPiT-everi.png'
 
     script src='https://code.jquery.com/jquery-3.3.1.min.js'
     script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js' integrity='sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D' crossorigin='anonymous'
 
   body class="#{page_classes}"
+    == partial 'partials/header', :locals => {active: :activity}
     == yield
+    == partial 'partials/footer'
     script src='https://www.google-analytics.com/analytics.js' async
     script src='https://www.googletagmanager.com/gtm.js?id=GTM-K5CVBQ5' async
     == javascript_include_tag  "all"
-    - unless yield_content(:js).nil?
-      == javascript_include_tag yield_content(:js)
